@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: hsl(0, 0%, 95%);
+}
+
+.wrapper {
+    max-width: 1440px;
+    width: 566px;
+    margin: 134px auto;
+    display: flex;
+}
+
+.category {
+    padding: 30px;
+    height: 308px;
+    width: 33.333333333333333333%;
+}
+
+.bg--orange {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 5px 0 0 5px;
+}
+.bg--cyan {
+    background-color: hsl(184, 100%, 22%);
+}
+.bg--darkcyan {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 5px 5px 0;
+}
+
+.category > img {
+    width: 40px;
+}
+
+h2 {
+    font-family: 'Big Shoulders Display', cursive;
+    /* font-family: 'Lexend Deca', sans-serif; */
+    font-weight: 700;
+    padding-top: 17px;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+    letter-spacing: 0.1px;
+}
+
+.category > p {
+    font-family: 'Lexend Deca', sans-serif;
+    /* font-family: 'Big Shoulders Display', cursive; */
+    font-size: 9px;
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.7;
+    margin-top: 17px;
+    letter-spacing: 0.1px;
+}
+
+
+.category > a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: 700; 
+    font-family: 'Big Shoulders Display';
+    letter-spacing: 1px;
+    line-height: 1.4;
+    margin-top: 50px;
+    width: 90px;
+    padding: 9px;
+    text-align: center;
+    border-radius: 15px;
+    background-color: hsl(0, 0%, 95%);
+}
+/* A gomboknal valamiert nem jok a betuk, padding? line-height? font-weight?  */
+
+.orange     {color: hsl(31, 77%, 52%)}
+.cyan       {color: hsl(184, 100%, 22%)}
+.darkcyan   {color: hsl(179, 100%, 13%)}
+
+
+/* Mobil nezet */
+@media (max-width: 375px) { 
+.wrapper {
+    max-width: 375px;
+    width: 200px;
+    margin: 54px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.category {
+    height: 272px;
+    padding: 30px;
+    width: 100%;
+}
+
+.bg--orange {   border-radius: 5px 5px 0 0 ;}
+.bg--darkcyan { border-radius: 0 0 5px 5px;}
+
+.category > a {
+    margin-top: 14px;
+}
+}
